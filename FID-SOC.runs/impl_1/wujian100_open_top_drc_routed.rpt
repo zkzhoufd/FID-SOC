@@ -1,0 +1,877 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Sep  2 16:46:22 2020
+| Host         : LAPTOP-5KE3GPT6 running 64-bit major release  (build 9200)
+| Command      : report_drc -file wujian100_open_top_drc_routed.rpt -pb wujian100_open_top_drc_routed.pb -rpx wujian100_open_top_drc_routed.rpx
+| Design       : wujian100_open_top
+| Device       : xc7a200tfbg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 165
++-----------+----------+-------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                       | Violations |
++-----------+----------+-------------------------------------------------------------------+------------+
+| CHECK-3   | Warning  | Report rule limit reached                                         | 1          |
+| DPIP-1    | Warning  | Input pipelining                                                  | 35         |
+| DPOP-1    | Warning  | PREG Output pipelining                                            | 29         |
+| DPOP-2    | Warning  | MREG Output pipelining                                            | 44         |
+| PLCK-12   | Warning  | Clock Placer Checks                                               | 1          |
+| REQP-1839 | Warning  | RAMB36 async control check                                        | 20         |
+| REQP-1840 | Warning  | RAMB18 async control check                                        | 2          |
+| RPBF-3    | Warning  | IO port buffering is incomplete                                   | 9          |
+| AVAL-4    | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 18         |
+| AVAL-5    | Advisory | enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND   | 4          |
+| REQP-1725 | Advisory | DSP_Abus_sign_bit_alert                                           | 2          |
++-----------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hadd_16DeQ_U83/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.ALIGN_ADD/DSP2/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hadd_16DeQ_U83/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hadd_16DeQ_U83/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.ALIGN_ADD/DSP2/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hadd_16DeQ_U83/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hadd_16DeQ_U83/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.ALIGN_ADD/DSP2/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hadd_16DeQ_U83/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.ALIGN_ADD/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hadd_16DeQ_U83/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hadd_16DeQ_U83/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hadd_16DeQ_U83/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hadd_16DeQ_U83/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hadd_16DeQ_U69/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.ALIGN_ADD/DSP2/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hadd_16DeQ_U69/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hadd_16DeQ_U69/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.ALIGN_ADD/DSP2/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hadd_16DeQ_U69/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hadd_16DeQ_U69/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.ALIGN_ADD/DSP2/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hadd_16DeQ_U69/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.ALIGN_ADD/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hadd_16DeQ_U69/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hadd_16DeQ_U69/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hadd_16DeQ_U69/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hadd_16DeQ_U69/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_fadd_32zec_U53/pic_detec_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_fadd_32zec_U53/pic_detec_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_fadd_32zec_U53/pic_detec_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_fadd_32zec_U53/pic_detec_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_fadd_32zec_U53/pic_detec_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_fadd_32zec_U53/pic_detec_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_fadd_32zec_U53/pic_detec_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_fadd_32zec_U53/pic_detec_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_faddfsuyd2_U52/pic_detec_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_faddfsuyd2_U52/pic_detec_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_faddfsuyd2_U52/pic_detec_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_faddfsuyd2_U52/pic_detec_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_faddfsuyd2_U52/pic_detec_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_faddfsuyd2_U52/pic_detec_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_faddfsuyd2_U52/pic_detec_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP input x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_faddfsuyd2_U52/pic_detec_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/tmp_product output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/tmp_product__0 output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/tmp_product__1 output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/tmp_product__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_44smb6_U9/pic_detec_mul_44smb6_MulnS_3_U/tmp_product__0 output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_44smb6_U9/pic_detec_mul_44smb6_MulnS_3_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U5/pic_detec_mul_49nkbM_MulnS_1_U/tmp_product__0 output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U5/pic_detec_mul_49nkbM_MulnS_1_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U6/pic_detec_mul_49nkbM_MulnS_1_U/tmp_product__0 output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U6/pic_detec_mul_49nkbM_MulnS_1_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U7/pic_detec_mul_49nkbM_MulnS_1_U/tmp_product__0 output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U7/pic_detec_mul_49nkbM_MulnS_1_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_52slbW_U8/pic_detec_mul_52slbW_MulnS_2_U/tmp_product__0 output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_52slbW_U8/pic_detec_mul_52slbW_MulnS_2_U/tmp_product__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/r_V_27_fu_901_p2 output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/r_V_27_fu_901_p2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/r_V_27_fu_901_p2__0 output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/r_V_27_fu_901_p2__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hadd_16DeQ_U83/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hadd_16DeQ_U83/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#21 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#22 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#23 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#24 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hadd_16DeQ_U69/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hadd_16DeQ_U69/pic_detec_ap_hadd_3_full_dsp_16_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY_HP.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#25 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#26 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#27 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#28 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_fadd_32zec_U53/pic_detec_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_fadd_32zec_U53/pic_detec_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#29 Warning
+PREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_faddfsuyd2_U52/pic_detec_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP output x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_faddfsuyd2_U52/pic_detec_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/p_reg__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/p_reg__0__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/p_reg__0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/p_reg__1 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/p_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/tmp_product multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/tmp_product__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/tmp_product__1 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_33nncg_U10/pic_detec_mul_33nncg_MulnS_4_U/tmp_product__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_44smb6_U9/pic_detec_mul_44smb6_MulnS_3_U/p_reg__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_44smb6_U9/pic_detec_mul_44smb6_MulnS_3_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_44smb6_U9/pic_detec_mul_44smb6_MulnS_3_U/p_reg__0__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_44smb6_U9/pic_detec_mul_44smb6_MulnS_3_U/p_reg__0__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_44smb6_U9/pic_detec_mul_44smb6_MulnS_3_U/p_reg__1 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_44smb6_U9/pic_detec_mul_44smb6_MulnS_3_U/p_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_44smb6_U9/pic_detec_mul_44smb6_MulnS_3_U/tmp_product__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_44smb6_U9/pic_detec_mul_44smb6_MulnS_3_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U5/pic_detec_mul_49nkbM_MulnS_1_U/p_reg multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U5/pic_detec_mul_49nkbM_MulnS_1_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U5/pic_detec_mul_49nkbM_MulnS_1_U/p_reg__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U5/pic_detec_mul_49nkbM_MulnS_1_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U5/pic_detec_mul_49nkbM_MulnS_1_U/p_reg__1 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U5/pic_detec_mul_49nkbM_MulnS_1_U/p_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U5/pic_detec_mul_49nkbM_MulnS_1_U/tmp_product__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U5/pic_detec_mul_49nkbM_MulnS_1_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U6/pic_detec_mul_49nkbM_MulnS_1_U/p_reg multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U6/pic_detec_mul_49nkbM_MulnS_1_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U6/pic_detec_mul_49nkbM_MulnS_1_U/p_reg__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U6/pic_detec_mul_49nkbM_MulnS_1_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#17 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U6/pic_detec_mul_49nkbM_MulnS_1_U/p_reg__1 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U6/pic_detec_mul_49nkbM_MulnS_1_U/p_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#18 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U6/pic_detec_mul_49nkbM_MulnS_1_U/tmp_product__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U6/pic_detec_mul_49nkbM_MulnS_1_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#19 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U7/pic_detec_mul_49nkbM_MulnS_1_U/p_reg multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U7/pic_detec_mul_49nkbM_MulnS_1_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#20 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U7/pic_detec_mul_49nkbM_MulnS_1_U/p_reg__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U7/pic_detec_mul_49nkbM_MulnS_1_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#21 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U7/pic_detec_mul_49nkbM_MulnS_1_U/p_reg__1 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U7/pic_detec_mul_49nkbM_MulnS_1_U/p_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#22 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U7/pic_detec_mul_49nkbM_MulnS_1_U/tmp_product__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_49nkbM_U7/pic_detec_mul_49nkbM_MulnS_1_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#23 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_52slbW_U8/pic_detec_mul_52slbW_MulnS_2_U/p_reg multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_52slbW_U8/pic_detec_mul_52slbW_MulnS_2_U/p_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#24 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_52slbW_U8/pic_detec_mul_52slbW_MulnS_2_U/p_reg__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_52slbW_U8/pic_detec_mul_52slbW_MulnS_2_U/p_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#25 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_52slbW_U8/pic_detec_mul_52slbW_MulnS_2_U/p_reg__1 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_52slbW_U8/pic_detec_mul_52slbW_MulnS_2_U/p_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#26 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_52slbW_U8/pic_detec_mul_52slbW_MulnS_2_U/tmp_product__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_52slbW_U8/pic_detec_mul_52slbW_MulnS_2_U/tmp_product__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#27 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_63nocq_U11/pic_detec_mul_63nocq_MulnS_5_U/buff0_reg multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_63nocq_U11/pic_detec_mul_63nocq_MulnS_5_U/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#28 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_63nocq_U11/pic_detec_mul_63nocq_MulnS_5_U/buff0_reg__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/pic_detec_mul_63nocq_U11/pic_detec_mul_63nocq_MulnS_5_U/buff0_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#29 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/r_V_27_fu_901_p2 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/r_V_27_fu_901_p2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#30 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/r_V_27_fu_901_p2__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/r_V_27_fu_901_p2__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#31 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/tmp_2_reg_1734_reg multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/tmp_2_reg_1734_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#32 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/tmp_2_reg_1734_reg__0 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/grp_sin_or_cos_double_s_fu_409/tmp_2_reg_1734_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#33 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#34 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#35 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#36 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#37 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#38 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#39 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#40 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#41 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#42 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.MULT/MULT_GEN_VARIANT.FIX_MULT/MULT/gDSP.gDSP_only.iDSP/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#43 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_fadd_32zec_U53/pic_detec_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_fadd_32zec_U53/pic_detec_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#44 Warning
+MREG Output pipelining  
+DSP x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_faddfsuyd2_U52/pic_detec_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP multiplier stage x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_faddfsuyd2_U52/pic_detec_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PLCK-12#1 Warning
+Clock Placer Checks  
+Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	PAD_JTAG_TCLK_IBUF_inst (IBUF.O) is locked to AA15
+	padmux_cpu_jtg_tclk_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0 has an input control pin x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0/ENBWREN (net: x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/enb) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1 has an input control pin x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1/ENBWREN (net: x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/enb) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2 has an input control pin x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_2/ENBWREN (net: x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/enb) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3 has an input control pin x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_3/ENBWREN (net: x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/enb) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_4 has an input control pin x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_4/ENBWREN (net: x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/enb) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_5 has an input control pin x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_5/ENBWREN (net: x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/enb) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_6 has an input control pin x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_6/ENBWREN (net: x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/enb) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_7 has an input control pin x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_7/ENBWREN (net: x_pdu_top/x_main_bus_top/x_ahb_axi_kws/x_data_in_fifo/inst/gen_fifo.xpm_fifo_axis_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/enb) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_0) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[10].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_1) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[11].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_1) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_1) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_0) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_2) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_2) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[5].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_2) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_2) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_2) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_2) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram has an input control pin x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram/ENARDEN (net: x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.SIMPLE_PRIM36.ram_2) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ENARDEN (net: x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/ena_array[0]) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram has an input control pin x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/DEVICE_7SERIES.NO_BMM_INFO.SP.WIDE_PRIM18.ram/ENBWREN (net: x_pdu_top/x_main_bus_top/x_main_dmem_top0/dmem_bram_0/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/prim_init.ram/ena_array[0]) which is driven by a register (x_pdu_top/x_sub_apb0_top/x_wdt_sec_top/x_wdt/U_WDT_ISRC/U_WDT_ISRG/sys_rst_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+RPBF-3#1 Warning
+IO port buffering is incomplete  
+Device port PAD_JTAG_TCLK expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#2 Warning
+IO port buffering is incomplete  
+Device port PAD_MCURST expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#3 Warning
+IO port buffering is incomplete  
+Device port PAD_PWM_CH1 expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#4 Warning
+IO port buffering is incomplete  
+Device port PAD_PWM_CH11 expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#5 Warning
+IO port buffering is incomplete  
+Device port PAD_PWM_CH3 expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#6 Warning
+IO port buffering is incomplete  
+Device port PAD_PWM_CH5 expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#7 Warning
+IO port buffering is incomplete  
+Device port PAD_PWM_CH7 expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#8 Warning
+IO port buffering is incomplete  
+Device port PAD_PWM_CH9 expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+RPBF-3#9 Warning
+IO port buffering is incomplete  
+Device port PAD_PWM_FAULT expects both input and output buffering but the buffers are incomplete.
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP0/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP1/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP2/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#4 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP3/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#5 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP4/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#6 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP5/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#7 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP6/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#8 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP7/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#9 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/DSP8/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#10 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_DBL_VARIANT.FIX_MULT/FULL_MAX_USAGE.DSP9/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#11 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#12 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#13 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#14 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#15 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#16 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#17 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_fadd_32zec_U53/pic_detec_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#18 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_faddfsuyd2_U52/pic_detec_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.SHIFT_RND/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#1 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_dmul_64udo_U34/pic_detec_ap_dmul_4_max_dsp_64_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#2 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_BDCT_fu_293/grp_DCT_fu_194/pic_detec_fmul_32qcK_U29/pic_detec_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#3 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_64u_2u_1u_s_fu_349/pic_detec_hmul_16Ee0_U84/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#4 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_fc_relu6_fu_335/pic_detec_hmul_16Ee0_U70/pic_detec_ap_hmul_2_max_dsp_16_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LOGIC.R_AND_R/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+REQP-1725#1 Advisory
+DSP_Abus_sign_bit_alert  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_fadd_32zec_U53/pic_detec_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+REQP-1725#2 Advisory
+DSP_Abus_sign_bit_alert  
+x_pdu_top/x_main_bus_top/x_ahb_axi_kws/pic_detec_0/inst/grp_markov_fu_315/pic_detec_faddfsuyd2_U52/pic_detec_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP: When using the PreAdder and USE_DPORT is TRUE, the A operand should be restricted to 24 bit two's complement (and sign extended) to avoid over/underflow in the pre-add stage.
+Related violations: <none>
+
+

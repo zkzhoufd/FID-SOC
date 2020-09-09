@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="pic_detec" xd:componentRef="pic_detec" xd:initiationInterval="72240414" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="data_in.data" xd:originalName="data_in" xd:direction="in" xd:interfaceRef="data_in" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="data_in.last" xd:originalName="data_in" xd:direction="in" xd:interfaceRef="data_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="weight_in.data" xd:originalName="weight_in" xd:direction="in" xd:interfaceRef="weight_in" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="weight_in.last" xd:originalName="weight_in" xd:direction="in" xd:interfaceRef="weight_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="control_in.data" xd:originalName="control_in" xd:direction="in" xd:interfaceRef="control_in" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="control_in.last" xd:originalName="control_in" xd:direction="in" xd:interfaceRef="control_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="data_out.data" xd:originalName="data_out" xd:direction="out" xd:interfaceRef="data_out" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="data_out.last" xd:originalName="data_out" xd:direction="out" xd:interfaceRef="data_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="12748" xd:worst-case="72240413" xd:average-case="35322981"/>
+  <xd:resourceEstimates xd:LUT="23011" xd:FF="16011" xd:BRAM="171" xd:DSP="35"/>
+</xd:acceleratorMap>
