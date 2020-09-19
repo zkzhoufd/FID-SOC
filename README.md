@@ -1,5 +1,5 @@
 # KWS-SoC
-This is a SoC for neural-network and Markov feature extraction acceleration based on [wujian100_open](https://github.com/T-head-Semi/wujian100_open) platform, which is a low power open source MCU by T-Head. 
+This is a SoC for neural-network and Markov feature extraction acceleration based on [wujian100_open](https://github.com/T-head-Semi/wujian100_open) platform.
 
 
 ## QUICK START ##
